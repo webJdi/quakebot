@@ -1,0 +1,28 @@
+
+{% include '_header.html' %}
+{% include 'navbar.html' %}
+    <div class="quakeform">
+        <form id="quakedata" method="POST">
+            {% csrf_token %}
+        
+            {{form.as_p}}
+        
+            <input type="submit" name="Submit" class="btn-design-1" id="submit_data">
+        </form>
+    </div>
+
+
+{% include '_footer.html' %}
+
+
+
+
+
+
+
+
+
+
+
+
+

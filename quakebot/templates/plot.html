@@ -1,0 +1,13 @@
+{% include '_header.html' %}
+{% include 'navbar.html' %}
+<div class="land-container">
+    <div class="welcome-container">
+        <h4>Welcome!</h4>
+        <p>This is an experimental website - product of a trivial side project drawn too far! This is based on an open source dataset hosted on Kaggle containing detailed data on Seismic activities from across the Globe for almost a decade! I have shared a <span>visualization</span> of the data on this page for better understanding of what we are dealing with. Visitors with better idea may DM me on LinkedIn with suggestions for improvement or better ideas! Cheers!</p>
+    </div>
+    <div class="plot-container">
+        {{ plothtml|safe }}
+    </div>
+</div>
+
+{% include '_footer.html' %}
